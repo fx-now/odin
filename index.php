@@ -28,7 +28,9 @@ if($path == "pages/login.php"){
 }else{
 	//se não for login ou logoff, verifica se o usuário existe realmente e está logado
 	if(is_on() == true){
+		include("temas/".TEMA."/header.php");
 		include($path);
+		include("temas/".TEMA."/footer.php");
 	}else{ // se não existe ou não está logado, encaminha para a tela de login
 		is_autenticado("?login");
 	}

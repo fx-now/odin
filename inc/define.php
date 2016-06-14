@@ -10,7 +10,7 @@ define("DB_NAME","odin");
 define("DIR","odin/");
 
 # tema padrao
-define("TEMA","padrao");
+define("TEMA","gentelella");
 
 # tags
 define("TAG_TITLE","Odin");
