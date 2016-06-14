@@ -3,6 +3,7 @@ session_start();
 error_reporting(E_ALL);
 include("inc/bigboss.php");
 include("inc/define.php");
+include("inc/odin.php");
 
 //se há sessions, usa os dados da session
 if($_SESSION["login"] != "" and $_SESSION["senha"] != ""){
