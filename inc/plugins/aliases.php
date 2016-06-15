@@ -148,3 +148,14 @@ function p($texto, $red = false){ //(deixei por default o normal, assim...basta 
 		echo "<p>$texto</p>";
 	}
 }
+
+/**
+ * Alias para tooltip
+ * 
+ * @name tooltip
+ * @param string $texto
+ * @return string
+ */
+function tooltip($texto){
+    return " data-toggle=\"tooltip\" title=\"$texto\"";
+}

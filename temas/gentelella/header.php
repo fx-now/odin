@@ -12,7 +12,6 @@ $odin = new odin();
     <link rel="icon" href="img/favicon.png">
 
     <title><?= TAG_TITLE ?></title>
-
     <!-- Bootstrap -->
     <link href="temas/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -28,8 +27,7 @@ $odin = new odin();
     <link href="temas/gentelella/build/css/custom.min.css" rel="stylesheet">
     
     <script type="text/javascript" src="inc/js.js"></script>
-    <script type="text/javascript" src="inc/fullscreen.js"></script>
-    
+                    
   </head>
 
   <body class="nav-md">
