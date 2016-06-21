@@ -20,7 +20,13 @@
 
 <?
 if($_GET["sp"] == "new"){
+    //fonte: http://bootsnipp.com/snippets/g5X5z
 ?>
+    <link href="mods/criador/css.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="mods/criador/js.js"></script>
+    <![endif]-->
+            
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
@@ -30,31 +36,40 @@ if($_GET["sp"] == "new"){
                   </div>
                   <div class="x_content">
                       
-                      <div id="paineldecricao" class="col-md-9 col-sm-9 col-xs-9" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          &nbsp;.
-                      </div>
-                      <div class="col-md-3 col-sm-3 col-xs-12">
 
-                      <section class="panel">
-
-                        <div class="x_title">
-                            <h2 data-toggle="tooltip" title="Recursos">Recursos</h2>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div id="listaderecursos" class="panel-body">
-                            
-                      <div id="tipoInputTexto" class="form-group" draggable="true" ondragstart="drag(event)">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-3">Label</label>
-                        <div class="col-md-9 col-sm-9 col-xs-9">
-                          <input class="form-control" placeholder="Placeholder" type="text">
-                        </div>
-                      </div>
-                            
-                        </div>
-
-                      </section>
-
-                    </div>
+           <div class="row clearfix">
+	          <!-- Components -->
+        <div class="col-md-6">
+          <h2>Drag & Drop components</h2>
+          <hr>
+          <div class="tabbable">
+            <ul class="nav nav-tabs" id="formtabs">
+              <!-- Tab nav -->
+            </ul>
+            <form class="form-horizontal" id="components" role="form">
+              <fieldset>
+                <div class="tab-content">
+                  <!-- Tabs of snippets go here -->
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- / Components -->
+        <!-- Building Form. -->
+        <div class="col-md-6">
+          <div class="clearfix">
+            <h2>Your Form</h2>
+            <hr>
+            <div id="build">
+              <form id="target" class="form-horizontal">
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- / Building Form. -->
+      </div>      
+                   <script data-main="mods/criador/main-built.js" src="mods/criador/require.js" ></script>   
                       
                   </div>
                 </div>
